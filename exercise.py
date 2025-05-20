@@ -13,29 +13,36 @@
 #     print('Invalid data')
 
 
-# Exercício 2: Classificação de Dados de Sensor
-# Imagine que você está trabalhando com dados de sensores IoT.
-# Os dados incluem medições de temperatura. Você precisa classificar cada
-# leitura como 'Baixa', 'Normal' ou 'Alta'. Considerando que:
+# # Exercício 2: Classificação de Dados de Sensor
+# # Imagine que você está trabalhando com dados de sensores IoT.
+# # Os dados incluem medições de temperatura. Você precisa classificar cada
+# # leitura como 'Baixa', 'Normal' ou 'Alta'. Considerando que:
 
-# Temperatura < 18°C é 'Baixa'
-# Temperatura >= 18°C e <= 26°C é 'Normal'
-# Temperatura > 26°C é 'Alta'
+# # Temperatura < 18°C é 'Baixa'
+# # Temperatura >= 18°C e <= 26°C é 'Normal'
+# # Temperatura > 26°C é 'Alta'
 
-temperature = 27
+# temperature = 27
 
-if temperature < 18:
-    print('Low temperature')
-elif temperature >= 18 and temperature <= 26:
-    print('Normal temperature')
-else:
-    print('High temperature')
+# if temperature < 18:
+#     print('Low temperature')
+# elif temperature >= 18 and temperature <= 26:
+#     print('Normal temperature')
+# else:
+#     print('High temperature')
 
 # Exercício 3: Filtragem de Logs por Severidade
 # Você está analisando logs de uma aplicação e precisa filtrar mensagens
 # com severidade 'ERROR'. Dado um registro de log em formato de dicionário
-# como `log = {'timestamp': '2021-06-23 10:00:00', 'level': 'ERROR', 'message': 'Falha na conexão'}`,
-# escreva um programa que imprima a mensagem se a severidade for 'ERROR'.
+# como `log = {'timestamp': '2021-06-23 10:00:00', 'level': 'ERROR',
+# 'message': 'Falha na conexão'}`, escreva um programa que imprima
+# a mensagem se a severidade for 'ERROR'.
+
+log = {'timestamp': '2021-06-23 10:00:00', 'level': 'ERROR', 'message': 'Falha na conexão'}
+
+if log['level'] == 'ERROR':
+    print(log['message'])
+
 
 # Exercício 4: Validação de Dados de Entrada
 # Antes de processar os dados de usuários em um sistema de recomendação,
